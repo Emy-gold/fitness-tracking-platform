@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Workout Logging",
+        "summary": "Easily log your workouts with detailed information about exercises, sets, reps, and weights.",
+        "image": "src/assets/icon1.svg"
+    },
+    {
+        "id": 2,
+        "title": "Chicken Tikka Masala",
+        "summary": "Visualize your progress with interactive charts and graphs, tracking your improvements over time.",
+        "image": "src/assets/icon2.svg"
+    },
+    {
+        "id": 3,
+        "title": "Spaghetti Carbonara",
+        "summary": "Discover a wide range of exercises with detailed instructions and videos to enhance your workout routine.",
+        "image": "src/assets/icon1.svg"
+    }
+]
