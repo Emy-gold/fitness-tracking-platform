@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import cardsData from "../cardsData.json";
-import homepic from "../assets/home.png";
+import homepic from "./public/assets/home.png";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
