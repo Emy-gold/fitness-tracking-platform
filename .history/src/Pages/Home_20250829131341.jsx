@@ -76,7 +76,7 @@ function Home() {
                     <h2 className='text-3xl font-bold text-textColor'>Benefits</h2>
                     <div className='flex flex-wrap gap-6'>
                         {benefits.map(benefit => (
-                            <div key={benefit.id} className='flex flex-row-reverse justify-between p-5 border rounded-2xl w-full shadow-sm lg:w-full hover:opacity-50 hover:scale-105 hover:shadow-md duration-500'>
+                            <div key={benefit.id} className='flex flex-row-reverse justify-between p-5 border rounded-2xl w-full lg:w-full hover:opacity-30 duration-300 hover:scale-100'>
                                 <img src={benefit.image} className='lg:w-[400px] ' />
                                 <div className='flex flex-col items-start text-left'>
                                     <h3 className='text-2xl font-bold mb-4 text-textColor '>{benefit.title}</h3>
