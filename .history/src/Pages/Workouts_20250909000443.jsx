@@ -28,7 +28,7 @@ function Workouts() {
     return (
         <>
             <div className="flex max-w-full flex-row-reverse justify-center m-4 gap-40 font-lexend">
-                <img src={workout} alt="Workout illustration" />
+                <img src="src/assets/workout.png" alt="Workout illustration" />
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-5 gap-4">
                     <h1 className="text-left font-bold">Log your Workouts</h1>
                     <p className="text-left text-gray-400">Log your sets and track progress over time</p>
