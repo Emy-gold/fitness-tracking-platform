@@ -10,19 +10,9 @@ function Workouts() {
     useEffect(() => {
         const fetchExercises = async () => {
             try {
-                const response = await fetch("https://wger.de/api/v2/exerciseinfo/?language=2&limit=50");
+                const response = await fetch("https://wger.de/api/v2/exercise/?language=2&limit=50");
                 const data = await response.json();
-
-                // Extract English translation names
-                const formatted = data.results.map((exercise) => {
-                    const translation = exercise.translations.find(t => t.language === 2);
-                    return {
-                        id: exercise.id,
-                        name: translation ? translation.name : "Unnamed exercise",
-                    };
-                });
-
-                setExercises(formatted);
+                setExercises(data.results);
             } catch (error) {
                 console.error("Error fetching exercises:", error);
             }
@@ -65,7 +55,7 @@ function Workouts() {
                     </option>
                     {exercises.map((exercise) => (
                         <option key={exercise.id} value={exercise.id}>
-                            {exercise.name}
+                            {exercise.name || `Exercise #${exercise.id}`}
                         </option>
                     ))}
                 </select>
@@ -141,4 +131,3 @@ function Workouts() {
 }
 
 export default Workouts;
-
